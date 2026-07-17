@@ -68,9 +68,6 @@ bash train.sh 0,1 \
 ```
 ---
 
-## Evaluation
-
----
 ## Experimental Results
 | Dataset | Setting | Avg. Acc. | Last Acc. |
 |---------|----------|---------------|---------------|
