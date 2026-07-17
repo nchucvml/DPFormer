@@ -4,11 +4,7 @@
 **Jiun-Feng Chang**, 
 **[Chun-Rong Huang](http://cvml.cs.nycu.edu.tw/biography.html)**
 
-[Paper](https://arxiv.org/abs/2506.07414)
-|
-[arXiv](https://arxiv.org/abs/2506.07414)
-|
-[BibTeX](#citation)
+
 
 ---
 Welcome to DPFormer Official PyTorch implementation!
@@ -113,13 +109,4 @@ python test.py --ckpt_dir ./checkpoints/cifar100/10/<date>/<exp> --increment 10
 
 ## Citation
 
-If you find this repository useful, please consider citing our paper.
-
-```bibtex
-@article{huang2025dpformer,
-    title={DPFormer: Dynamic Prompt Transformer for Continual Learning},
-    author={Sheng-Kai Huang and Jiun-Feng Chang and Chun-Rong Huang},
-    journal={arXiv preprint arXiv:2506.07414},
-    year={2025}
-}
-```
+To be announced.
