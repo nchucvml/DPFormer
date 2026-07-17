@@ -65,24 +65,11 @@ bash train.sh 0,1 \
   --name my_run \
   --increment 2 \
   --options options/data/cifar100_order3.yaml options/config.yaml \
-  --oversample_old 3
-```
-
-```bash
-# CIFAR-100 with a pretrained ViT backbone (input_size is forced to 224)
-bash train.sh 0,1 \
-  --name my_pretrained_run \
-  --increment 10 \
-  --pretrained_model google/vit-base-patch16-224 \
-  --options options/data/cifar100_order1.yaml options/config.yaml
 ```
 ---
 
 ## Evaluation
 
-```bash
-python test.py --ckpt_dir ./checkpoints/cifar100/10/<date>/<exp> --increment 10
-```
 ---
 ## Experimental Results
 | Dataset | Setting | Avg. Acc. | Last Acc. |
