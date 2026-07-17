@@ -83,7 +83,7 @@ bash train.sh 0,1 \
 
 | Model | Dataset | Download |
 |--------|----------|----------|
-| DPFormer | CIFAR100-10steps | Coming Soon |
+| DPFormer | CIFAR100-10steps | https://drive.google.com/file/d/1moE9SZ1iHWqYPmGPxXjGMYuQXj3D8bcy/view?usp=drive_link |
 | DPFormer | CIFAR100-20steps | Coming Soon |
 | DPFormer | CIFAR100-50steps | Coming Soon |
 | DPFormer | ImageNet100 | Coming Soon |
