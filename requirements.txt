@@ -1,0 +1,8 @@
+continuum
+timm
+transformers
+pyyaml
+numpy
+
+-f https://shi-labs.com/natten/wheels/cu113/torch1.12/index.html
+natten==0.14.6
