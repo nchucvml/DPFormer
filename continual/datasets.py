@@ -47,7 +47,7 @@ def build_transform(is_train, args):
             auto_augment=augmentation,
             interpolation='bicubic',
         )
-        if args.dataset == 'cifar100':
+        if args.dataset.lower() == 'cifar100':
             # replace RandomResizedCropAndInterpolation with RandomCrop
             if args.pretrained_model is None:
                 transform.transforms[0] = transforms.RandomCrop(args.input_size, padding=4)
@@ -60,8 +60,7 @@ def build_transform(is_train, args):
         t.append(transforms.Resize(256, interpolation=interpolation))    # standard ImageNet eval: resize short side to 256, then center crop to input_size
         t.append(transforms.CenterCrop(args.input_size))
     t.append(transforms.ToTensor())
-    if args.dataset == 'cifar100':
-        # Normalization values for CIFAR100
+    if args.dataset.lower() == 'cifar100':
         t.append(transforms.Normalize((0.5071, 0.4867, 0.4408), (0.2675, 0.2565, 0.2761)))
     else:
         t.append(transforms.Normalize(IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD))
