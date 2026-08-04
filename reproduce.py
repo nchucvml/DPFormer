@@ -209,12 +209,14 @@ def main():
         print("No orders evaluated.")
         return
 
+    avg_rounded = [round(a, 2) for a in avg_scores]
+    last_rounded = [round(a, 2) for a in last_scores]
     print('=' * 55)
     print(f"Orders evaluated: {len(avg_scores)}")
-    print(f"Per-order Avg : {[round(a, 2) for a in avg_scores]}")
-    print(f"Per-order Last: {[round(a, 2) for a in last_scores]}")
-    print(f"Mean Avg Incremental Acc: {statistics.mean(avg_scores):.2f}%")
-    print(f"Mean Last Acc          : {statistics.mean(last_scores):.2f}%")
+    print(f"Per-order Avg : {avg_rounded}")
+    print(f"Per-order Last: {last_rounded}")
+    print(f"Mean Avg Incremental Acc: {statistics.mean(avg_rounded):.2f}%")
+    print(f"Mean Last Acc          : {statistics.mean(last_rounded):.2f}%")
     print('=' * 55)
 
 
