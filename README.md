@@ -35,14 +35,6 @@ Install the remaining dependencies.
 ```bash
 pip install -r requirements.txt
 ```
-
-If you train the DiNAT backbone from scratch, install NATTEN.
-
-```bash
-pip install natten==0.14.6 \
-    -f https://shi-labs.com/natten/wheels/cu113/torch1.12/index.html
-```
-
 ---
 
 ## Datasets
