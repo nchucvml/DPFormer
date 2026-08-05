@@ -59,6 +59,16 @@ bash train.sh 0,1 \
   --options options/data/cifar100_order3.yaml options/config.yaml \
 ```
 ---
+## Model Weights
+1. Download
+```bash
+hf download kay8887/DPFormer-checkpoints --repo-type model --local-dir ./checkpoints
+```
+2. Reproduce
+```bash
+python reproduce.py --ckpt_root ./checkpoints/cifar100/10 --data_path datasets/cifar100
+```
+---
 
 ## Experimental Results
 | Dataset | Setting | Avg. Acc. | Last Acc. |
@@ -68,18 +78,6 @@ bash train.sh 0,1 \
 | CIFAR-100 | 50 steps | 74.68 | 61.14 |
 | ImageNet100 | 10 steps | 81.54 | 72.48 |
 | ImageNet1K | 10 steps | 76.13 | 66.08 |
-
----
-
-## Model Weights
-
-| Model | Dataset | Download |
-|--------|----------|----------|
-| DPFormer | CIFAR100-10steps | https://drive.google.com/file/d/1moE9SZ1iHWqYPmGPxXjGMYuQXj3D8bcy/view?usp=drive_link |
-| DPFormer | CIFAR100-20steps | Coming Soon |
-| DPFormer | CIFAR100-50steps | Coming Soon |
-| DPFormer | ImageNet100 | Coming Soon |
-| DPFormer | ImageNet1K | Coming Soon |
 
 ---
 
